@@ -2,7 +2,7 @@ import FeedbackContext from "../context/FeedbackContext";
 import { useContext } from "react";
 
 function FeedbackStats() {
-  const feedback = useContext(FeedbackContext);
+  const {feedback} = useContext(FeedbackContext);
 
   const feedback_length = feedback.length;
   let averrage =
@@ -11,6 +11,7 @@ function FeedbackStats() {
     }, 0) / feedback_length;
   averrage = averrage.toFixed(1).replace(/[.,]0/, "");
   return (
+    
     <div className="feedback-stats">
       <h4>{feedback_length} Reviews</h4>
       <h4>Average Rating :{isNaN(averrage) ? 0 : averrage}</h4>
