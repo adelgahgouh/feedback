@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Abouticon from "./components/Abouticon";
 import { FeedbackProvider } from "./context/FeedbackContext";
-import FeedbackData from "./data/Feedbackdata";
 function App() {
   return (
     <>
